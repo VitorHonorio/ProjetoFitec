@@ -8,6 +8,9 @@ export default class App extends React.Component {
         <TouchableOpacity onPress={()=>{alert("Tenha um ótimo dia!")}}>
           <Image style={styles.button} source={require("../assets/smile.png")}/>
         </TouchableOpacity>
+        <TouchableOpacity onPress={()=>{alert("Tenha um ótimo dia!")}}>
+          <Image style={styles.button} source={require("../assets/smile.png")}/>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -15,16 +18,17 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row'
   },
   button: {
     backgroundColor: '#4682B4',
     padding: 10,
     marginBottom: 100,
     resizeMode: 'center',
-    width: 50,
+    width: 100,
     height: 50,
   },
 });

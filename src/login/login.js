@@ -32,7 +32,8 @@ export default function login({ navigation }) {
              <Text style={styles.submitText}>Acessar</Text>
            </TouchableOpacity>
 
-           <TouchableOpacity style={styles.btnRegister}>
+           <TouchableOpacity 
+           style={styles.btnRegister} onPress={() => navigation.navigate('cadastro')}>
              <Text style={styles.registerText}>Criar conta</Text>
            </TouchableOpacity>
 
